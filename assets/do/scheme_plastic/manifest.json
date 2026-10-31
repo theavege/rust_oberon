@@ -1,0 +1,1934 @@
+{
+  "source": "/tmp/dark-oberon/schemes/plastic.dat",
+  "groups": [
+    {
+      "name": "default",
+      "textures": [
+        {
+          "id": "default fragment",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "default/default_fragment.png"
+        }
+      ]
+    },
+    {
+      "name": "underground",
+      "textures": [
+        {
+          "id": "Underground",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "underground/Underground.png"
+        }
+      ]
+    },
+    {
+      "name": "grass",
+      "textures": [
+        {
+          "id": "grass1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "grass/grass1.png"
+        }
+      ]
+    },
+    {
+      "name": "grass_border_w",
+      "textures": [
+        {
+          "id": "grass1_border_w",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "grass_border_w/grass1_border_w.png"
+        }
+      ]
+    },
+    {
+      "name": "grass_border_sw",
+      "textures": [
+        {
+          "id": "grass1_border_sw",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "grass_border_sw/grass1_border_sw.png"
+        }
+      ]
+    },
+    {
+      "name": "grass_border_s",
+      "textures": [
+        {
+          "id": "grass1_border_s",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "grass_border_s/grass1_border_s.png"
+        }
+      ]
+    },
+    {
+      "name": "grass_border_e",
+      "textures": [
+        {
+          "id": "grass1_border_e",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "grass_border_e/grass1_border_e.png"
+        }
+      ]
+    },
+    {
+      "name": "grass_border_n",
+      "textures": [
+        {
+          "id": "grass1_border_n",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "grass_border_n/grass1_border_n.png"
+        }
+      ]
+    },
+    {
+      "name": "grass_borderh_w",
+      "textures": [
+        {
+          "id": "grass1_borderh_w",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "grass_borderh_w/grass1_borderh_w.png"
+        }
+      ]
+    },
+    {
+      "name": "grass_borderh_nw",
+      "textures": [
+        {
+          "id": "grass1_borderh_nw",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "grass_borderh_nw/grass1_borderh_nw.png"
+        }
+      ]
+    },
+    {
+      "name": "grass_borderh_s",
+      "textures": [
+        {
+          "id": "grass1_borderh_s",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "grass_borderh_s/grass1_borderh_s.png"
+        }
+      ]
+    },
+    {
+      "name": "grass_borderh_se",
+      "textures": [
+        {
+          "id": "grass1_borderh_se",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "grass_borderh_se/grass1_borderh_se.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_s",
+      "textures": [
+        {
+          "id": "rocks_s1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_s/rocks_s1.png"
+        },
+        {
+          "id": "rocks_s2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_s/rocks_s2.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_s_border_e",
+      "textures": [
+        {
+          "id": "rocks_s1_border_e",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_s_border_e/rocks_s1_border_e.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_s_border_w",
+      "textures": [
+        {
+          "id": "rocks_s1_border_w",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_s_border_w/rocks_s1_border_w.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_s_end_e",
+      "textures": [
+        {
+          "id": "rocks_s1_end_e",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_s_end_e/rocks_s1_end_e.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_s_end_w",
+      "textures": [
+        {
+          "id": "rocks_s1_end_w",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_s_end_w/rocks_s1_end_w.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_sw",
+      "textures": [
+        {
+          "id": "rocks_sw1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_sw/rocks_sw1.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_w",
+      "textures": [
+        {
+          "id": "rocks_w1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_w/rocks_w1.png"
+        },
+        {
+          "id": "rocks_w2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_w/rocks_w2.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_w_border_s",
+      "textures": [
+        {
+          "id": "rocks_w1_border_s",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_w_border_s/rocks_w1_border_s.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_w_border_n",
+      "textures": [
+        {
+          "id": "rocks_w1_border_n",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_w_border_n/rocks_w1_border_n.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_w_end_s",
+      "textures": [
+        {
+          "id": "rocks_w1_end_s",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_w_end_s/rocks_w1_end_s.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_w_end_n",
+      "textures": [
+        {
+          "id": "rocks_w2_end_n",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_w_end_n/rocks_w2_end_n.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_nw",
+      "textures": [
+        {
+          "id": "rocks_nw1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_nw/rocks_nw1.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_n",
+      "textures": [
+        {
+          "id": "rocks_n1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_n/rocks_n1.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_n_border_e",
+      "textures": [
+        {
+          "id": "rocks_n1_border_e",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_n_border_e/rocks_n1_border_e.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_n_border_w",
+      "textures": [
+        {
+          "id": "rocks_n1_border_w",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_n_border_w/rocks_n1_border_w.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_ne",
+      "textures": [
+        {
+          "id": "rocks_ne1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_ne/rocks_ne1.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_e",
+      "textures": [
+        {
+          "id": "rocks_e1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_e/rocks_e1.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_e_border_n",
+      "textures": [
+        {
+          "id": "rocks_e1_border_n",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_e_border_n/rocks_e1_border_n.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_se",
+      "textures": [
+        {
+          "id": "rocks_se1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_se/rocks_se1.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_ws",
+      "textures": [
+        {
+          "id": "rocks_ws1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_ws/rocks_ws1.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_wn",
+      "textures": [
+        {
+          "id": "rocks_wn1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_wn/rocks_wn1.png"
+        }
+      ]
+    },
+    {
+      "name": "sea",
+      "textures": [
+        {
+          "id": "sea1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "sea/sea1.png"
+        }
+      ]
+    },
+    {
+      "name": "coast_n",
+      "textures": [
+        {
+          "id": "coast_n1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coast_n/coast_n1.png"
+        }
+      ]
+    },
+    {
+      "name": "coast_w",
+      "textures": [
+        {
+          "id": "coast_w1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coast_w/coast_w1.png"
+        }
+      ]
+    },
+    {
+      "name": "coast_e",
+      "textures": [
+        {
+          "id": "coast_e1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coast_e/coast_e1.png"
+        }
+      ]
+    },
+    {
+      "name": "coast_s",
+      "textures": [
+        {
+          "id": "coast_s1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coast_s/coast_s1.png"
+        }
+      ]
+    },
+    {
+      "name": "coast_wn",
+      "textures": [
+        {
+          "id": "coast_wn1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coast_wn/coast_wn1.png"
+        }
+      ]
+    },
+    {
+      "name": "coast_en",
+      "textures": [
+        {
+          "id": "coast_en1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coast_en/coast_en1.png"
+        }
+      ]
+    },
+    {
+      "name": "coast_es",
+      "textures": [
+        {
+          "id": "coast_es1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coast_es/coast_es1.png"
+        }
+      ]
+    },
+    {
+      "name": "coast_ne",
+      "textures": [
+        {
+          "id": "coast_ne1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coast_ne/coast_ne1.png"
+        }
+      ]
+    },
+    {
+      "name": "coast_nw",
+      "textures": [
+        {
+          "id": "coast_nw1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coast_nw/coast_nw1.png"
+        }
+      ]
+    },
+    {
+      "name": "coast_se",
+      "textures": [
+        {
+          "id": "coast_se1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coast_se/coast_se1.png"
+        }
+      ]
+    },
+    {
+      "name": "coast_sw",
+      "textures": [
+        {
+          "id": "coast_sw1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coast_sw/coast_sw1.png"
+        }
+      ]
+    },
+    {
+      "name": "coast_ws",
+      "textures": [
+        {
+          "id": "coast_ws1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coast_ws/coast_ws1.png"
+        }
+      ]
+    },
+    {
+      "name": "cliff_e",
+      "textures": [
+        {
+          "id": "cliff_e1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cliff_e/cliff_e1.png"
+        }
+      ]
+    },
+    {
+      "name": "cliff_n",
+      "textures": [
+        {
+          "id": "cliff_n1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cliff_n/cliff_n1.png"
+        }
+      ]
+    },
+    {
+      "name": "cliff_ne",
+      "textures": [
+        {
+          "id": "cliff_ne1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cliff_ne/cliff_ne1.png"
+        }
+      ]
+    },
+    {
+      "name": "cliff_nw",
+      "textures": [
+        {
+          "id": "cliff_nw1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cliff_nw/cliff_nw1.png"
+        }
+      ]
+    },
+    {
+      "name": "cliff_s",
+      "textures": [
+        {
+          "id": "cliff_s1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cliff_s/cliff_s1.png"
+        },
+        {
+          "id": "cliff_s2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cliff_s/cliff_s2.png"
+        }
+      ]
+    },
+    {
+      "name": "cliff_se",
+      "textures": [
+        {
+          "id": "cliff_se1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cliff_se/cliff_se1.png"
+        }
+      ]
+    },
+    {
+      "name": "cliff_sw",
+      "textures": [
+        {
+          "id": "cliff_sw1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cliff_sw/cliff_sw1.png"
+        }
+      ]
+    },
+    {
+      "name": "cliff_w",
+      "textures": [
+        {
+          "id": "cliff_w1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cliff_w/cliff_w1.png"
+        },
+        {
+          "id": "cliff_w2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cliff_w/cliff_w2.png"
+        }
+      ]
+    },
+    {
+      "name": "cliff_wn",
+      "textures": [
+        {
+          "id": "cliff_wn1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cliff_wn/cliff_wn1.png"
+        }
+      ]
+    },
+    {
+      "name": "cliff_ws",
+      "textures": [
+        {
+          "id": "cliff_ws1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cliff_ws/cliff_ws1.png"
+        }
+      ]
+    },
+    {
+      "name": "send",
+      "textures": [
+        {
+          "id": "send",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "send/send.png"
+        }
+      ]
+    },
+    {
+      "name": "clouds",
+      "textures": [
+        {
+          "id": "Clouds",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "clouds/Clouds.png"
+        }
+      ]
+    },
+    {
+      "name": "runestone",
+      "textures": [
+        {
+          "id": "runestone1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "runestone/runestone1.png"
+        }
+      ]
+    },
+    {
+      "name": "goldmine_picture",
+      "textures": [
+        {
+          "id": "goldmine_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "goldmine_picture/goldmine_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "goldmine_stay",
+      "textures": [
+        {
+          "id": "goldmine_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "goldmine_stay/goldmine_stay1.png"
+        },
+        {
+          "id": "goldmine_stay1_use",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "goldmine_stay/goldmine_stay1_use.png"
+        },
+        {
+          "id": "goldmine_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "goldmine_stay/goldmine_stay2.png"
+        }
+      ]
+    },
+    {
+      "name": "pig_picture",
+      "textures": [
+        {
+          "id": "pig_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "pig_picture/pig_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "pig_stay",
+      "textures": [
+        {
+          "id": "pig_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "pig_stay/pig_stay1.png"
+        },
+        {
+          "id": "pig_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "pig_stay/pig_stay2.png"
+        },
+        {
+          "id": "pig_stay3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "pig_stay/pig_stay3.png"
+        },
+        {
+          "id": "pig_stay4",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "pig_stay/pig_stay4.png"
+        },
+        {
+          "id": "pig_stay5",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "pig_stay/pig_stay5.png"
+        },
+        {
+          "id": "pig_stay6",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "pig_stay/pig_stay6.png"
+        },
+        {
+          "id": "pig_stay7",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "pig_stay/pig_stay7.png"
+        },
+        {
+          "id": "pig_stay8",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "pig_stay/pig_stay8.png"
+        }
+      ]
+    },
+    {
+      "name": "pig_zombie",
+      "textures": [
+        {
+          "id": "pig_zombie1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "pig_zombie/pig_zombie1.png"
+        },
+        {
+          "id": "pig_zombie2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "pig_zombie/pig_zombie2.png"
+        },
+        {
+          "id": "pig_zombie3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "pig_zombie/pig_zombie3.png"
+        },
+        {
+          "id": "pig_zombie4",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "pig_zombie/pig_zombie4.png"
+        },
+        {
+          "id": "pig_zombie5",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "pig_zombie/pig_zombie5.png"
+        },
+        {
+          "id": "pig_zombie6",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "pig_zombie/pig_zombie6.png"
+        },
+        {
+          "id": "pig_zombie7",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "pig_zombie/pig_zombie7.png"
+        },
+        {
+          "id": "pig_zombie8",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "pig_zombie/pig_zombie8.png"
+        }
+      ]
+    },
+    {
+      "name": "forest_picture",
+      "textures": [
+        {
+          "id": "forest_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "forest_picture/forest_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "forest_stay",
+      "textures": [
+        {
+          "id": "forest_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "forest_stay/forest_stay1.png"
+        },
+        {
+          "id": "forest_stay1_use",
+          "frames_h": 4,
+          "frames_v": 1,
+          "anim_ms": 2500,
+          "file": "forest_stay/forest_stay1_use.png"
+        },
+        {
+          "id": "forest_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "forest_stay/forest_stay2.png"
+        },
+        {
+          "id": "forest_stay2_use",
+          "frames_h": 4,
+          "frames_v": 1,
+          "anim_ms": 2500,
+          "file": "forest_stay/forest_stay2_use.png"
+        },
+        {
+          "id": "forest_stay3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "forest_stay/forest_stay3.png"
+        },
+        {
+          "id": "forest_stay3_use",
+          "frames_h": 4,
+          "frames_v": 1,
+          "anim_ms": 2500,
+          "file": "forest_stay/forest_stay3_use.png"
+        },
+        {
+          "id": "forest_stay4",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "forest_stay/forest_stay4.png"
+        },
+        {
+          "id": "forest_stay4_use",
+          "frames_h": 4,
+          "frames_v": 1,
+          "anim_ms": 2500,
+          "file": "forest_stay/forest_stay4_use.png"
+        },
+        {
+          "id": "forest_stay5",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "forest_stay/forest_stay5.png"
+        },
+        {
+          "id": "forest_stay5_use",
+          "frames_h": 4,
+          "frames_v": 1,
+          "anim_ms": 2500,
+          "file": "forest_stay/forest_stay5_use.png"
+        },
+        {
+          "id": "forest_stay6",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "forest_stay/forest_stay6.png"
+        },
+        {
+          "id": "forest_stay6_use",
+          "frames_h": 4,
+          "frames_v": 1,
+          "anim_ms": 2500,
+          "file": "forest_stay/forest_stay6_use.png"
+        },
+        {
+          "id": "forest_stay7",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "forest_stay/forest_stay7.png"
+        }
+      ]
+    },
+    {
+      "name": "cottage_picture",
+      "textures": [
+        {
+          "id": "cottage_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cottage_picture/cottage_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "cottage_stay",
+      "textures": [
+        {
+          "id": "cottage_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cottage_stay/cottage_stay1.png"
+        },
+        {
+          "id": "cottage_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cottage_stay/cottage_stay2.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_n_coast_e",
+      "textures": [
+        {
+          "id": "rocks_n1_coast_e1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_n_coast_e/rocks_n1_coast_e1.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_n_coast_w",
+      "textures": [
+        {
+          "id": "rocks_n1_coast_w1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_n_coast_w/rocks_n1_coast_w1.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_s_coast_e",
+      "textures": [
+        {
+          "id": "rocks_s1_coast_e1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_s_coast_e/rocks_s1_coast_e1.png"
+        },
+        {
+          "id": "rocks_s2_coast_e1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_s_coast_e/rocks_s2_coast_e1.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_s_coast_w",
+      "textures": [
+        {
+          "id": "rocks_s1_coast_w1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_s_coast_w/rocks_s1_coast_w1.png"
+        },
+        {
+          "id": "rocks_s2_coast_w1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_s_coast_w/rocks_s2_coast_w1.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_e_coast_n",
+      "textures": [
+        {
+          "id": "rocks_e1_coast_n1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_e_coast_n/rocks_e1_coast_n1.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_e_coast_s",
+      "textures": [
+        {
+          "id": "rocks_e1_coast_s1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_e_coast_s/rocks_e1_coast_s1.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_w_coast_e",
+      "textures": [
+        {
+          "id": "rocks_w1_coast_e1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_w_coast_e/rocks_w1_coast_e1.png"
+        },
+        {
+          "id": "rocks_w2_coast_e1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_w_coast_e/rocks_w2_coast_e1.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_w_coast_n",
+      "textures": [
+        {
+          "id": "rocks_w1_coast_n1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_w_coast_n/rocks_w1_coast_n1.png"
+        },
+        {
+          "id": "rocks_w2_coast_n1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_w_coast_n/rocks_w2_coast_n1.png"
+        }
+      ]
+    },
+    {
+      "name": "sea_border_e",
+      "textures": [
+        {
+          "id": "sea1_border_e",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "sea_border_e/sea1_border_e.png"
+        }
+      ]
+    },
+    {
+      "name": "sea_border_n",
+      "textures": [
+        {
+          "id": "sea1_border_n",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "sea_border_n/sea1_border_n.png"
+        }
+      ]
+    },
+    {
+      "name": "sea_border_s",
+      "textures": [
+        {
+          "id": "sea1_border_s",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "sea_border_s/sea1_border_s.png"
+        }
+      ]
+    },
+    {
+      "name": "sea_border_w",
+      "textures": [
+        {
+          "id": "sea1_border_w",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "sea_border_w/sea1_border_w.png"
+        }
+      ]
+    },
+    {
+      "name": "coast_e_border_n",
+      "textures": [
+        {
+          "id": "coast_e1_border_n",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coast_e_border_n/coast_e1_border_n.png"
+        }
+      ]
+    },
+    {
+      "name": "coast_w_border_n",
+      "textures": [
+        {
+          "id": "coast_w1_border_n",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coast_w_border_n/coast_w1_border_n.png"
+        }
+      ]
+    },
+    {
+      "name": "coast_n_border_w",
+      "textures": [
+        {
+          "id": "coast_n1_border_w",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coast_n_border_w/coast_n1_border_w.png"
+        }
+      ]
+    },
+    {
+      "name": "coast_s_border_w",
+      "textures": [
+        {
+          "id": "coast_s1_border_w",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coast_s_border_w/coast_s1_border_w.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_e_border_s",
+      "textures": [
+        {
+          "id": "rocks_e1_border_s",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_e_border_s/rocks_e1_border_s.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_es",
+      "textures": [
+        {
+          "id": "rocks_es1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_es/rocks_es1.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_en",
+      "textures": [
+        {
+          "id": "rocks_en1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_en/rocks_en1.png"
+        }
+      ]
+    },
+    {
+      "name": "cliff_en",
+      "textures": [
+        {
+          "id": "cliff_en1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cliff_en/cliff_en1.png"
+        }
+      ]
+    },
+    {
+      "name": "cliff_es",
+      "textures": [
+        {
+          "id": "cliff_es1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cliff_es/cliff_es1.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_e_end_n",
+      "textures": [
+        {
+          "id": "rocks_e1_end_n",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_e_end_n/rocks_e1_end_n.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_e_end_s",
+      "textures": [
+        {
+          "id": "rocks_e1_end_s",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_e_end_s/rocks_e1_end_s.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_n_end_e",
+      "textures": [
+        {
+          "id": "rocks_n1_end_e",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_n_end_e/rocks_n1_end_e.png"
+        }
+      ]
+    },
+    {
+      "name": "rocks_n_end_w",
+      "textures": [
+        {
+          "id": "rocks_n1_end_w",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "rocks_n_end_w/rocks_n1_end_w.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_grass",
+      "textures": [
+        {
+          "id": "ug_grass1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_grass/ug_grass1.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_grass_border_e",
+      "textures": [
+        {
+          "id": "ug_grass1_border_e",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_grass_border_e/ug_grass1_border_e.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_grass_border_n",
+      "textures": [
+        {
+          "id": "ug_grass1_border_n",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_grass_border_n/ug_grass1_border_n.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_sea",
+      "textures": [
+        {
+          "id": "ug_sea1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_sea/ug_sea1.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_sea_border_e",
+      "textures": [
+        {
+          "id": "ug_sea1_border_e",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_sea_border_e/ug_sea1_border_e.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_sea_border_n",
+      "textures": [
+        {
+          "id": "ug_sea1_border_n",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_sea_border_n/ug_sea1_border_n.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_coast_e",
+      "textures": [
+        {
+          "id": "ug_coast_e1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_coast_e/ug_coast_e1.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_coast_e_border_n",
+      "textures": [
+        {
+          "id": "ug_coast_e1_border_n",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_coast_e_border_n/ug_coast_e1_border_n.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_coast_en",
+      "textures": [
+        {
+          "id": "ug_coast_en1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_coast_en/ug_coast_en1.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_coast_es",
+      "textures": [
+        {
+          "id": "ug_coast_es1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_coast_es/ug_coast_es1.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_coast_n",
+      "textures": [
+        {
+          "id": "ug_coast_n1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_coast_n/ug_coast_n1.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_coast_ne",
+      "textures": [
+        {
+          "id": "ug_coast_ne1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_coast_ne/ug_coast_ne1.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_coast_nw",
+      "textures": [
+        {
+          "id": "ug_coast_nw1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_coast_nw/ug_coast_nw1.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_coast_s",
+      "textures": [
+        {
+          "id": "ug_coast_s1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_coast_s/ug_coast_s1.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_coast_se",
+      "textures": [
+        {
+          "id": "ug_coast_se1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_coast_se/ug_coast_se1.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_coast_sw",
+      "textures": [
+        {
+          "id": "ug_coast_sw1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_coast_sw/ug_coast_sw1.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_coast_w",
+      "textures": [
+        {
+          "id": "ug_coast_w1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_coast_w/ug_coast_w1.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_coast_w_border_n",
+      "textures": [
+        {
+          "id": "ug_coast_w1_border_n",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_coast_w_border_n/ug_coast_w1_border_n.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_coast_wn",
+      "textures": [
+        {
+          "id": "ug_coast_wn1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_coast_wn/ug_coast_wn1.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_coast_ws",
+      "textures": [
+        {
+          "id": "ug_coast_ws1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_coast_ws/ug_coast_ws1.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_grass_border_s",
+      "textures": [
+        {
+          "id": "ug_grass1_border_s",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_grass_border_s/ug_grass1_border_s.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_grass_border_w",
+      "textures": [
+        {
+          "id": "ug_grass1_border_w",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_grass_border_w/ug_grass1_border_w.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_grass_border_se",
+      "textures": [
+        {
+          "id": "ug_grass1_border_se",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_grass_border_se/ug_grass1_border_se.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_grass_border_sw",
+      "textures": [
+        {
+          "id": "ug_grass1_border_sw",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_grass_border_sw/ug_grass1_border_sw.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_sea_border_w",
+      "textures": [
+        {
+          "id": "ug_sea1_border_w",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_sea_border_w/ug_sea1_border_w.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_coast_n_border_w",
+      "textures": [
+        {
+          "id": "ug_coast_n1_border_w",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_coast_n_border_w/ug_coast_n1_border_w.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_coast_s_border_w",
+      "textures": [
+        {
+          "id": "ug_coast_s1_border_w",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_coast_s_border_w/ug_coast_s1_border_w.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_grass_border_ne",
+      "textures": [
+        {
+          "id": "ug_grass1_border_ne",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_grass_border_ne/ug_grass1_border_ne.png"
+        }
+      ]
+    },
+    {
+      "name": "ug_grass_border_nw",
+      "textures": [
+        {
+          "id": "ug_grass1_border_nw",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "ug_grass_border_nw/ug_grass1_border_nw.png"
+        }
+      ]
+    },
+    {
+      "name": "coal_picture",
+      "textures": [
+        {
+          "id": "coal_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coal_picture/coal_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "coal_stay",
+      "textures": [
+        {
+          "id": "coal_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coal_stay/coal_stay1.png"
+        },
+        {
+          "id": "coal_stay1_use",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coal_stay/coal_stay1_use.png"
+        },
+        {
+          "id": "coal_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coal_stay/coal_stay2.png"
+        },
+        {
+          "id": "coal_stay2_use",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coal_stay/coal_stay2_use.png"
+        },
+        {
+          "id": "coal_stay3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coal_stay/coal_stay3.png"
+        },
+        {
+          "id": "coal_stay3_use",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coal_stay/coal_stay3_use.png"
+        },
+        {
+          "id": "coal_stay4",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coal_stay/coal_stay4.png"
+        },
+        {
+          "id": "coal_stay4_use",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coal_stay/coal_stay4_use.png"
+        },
+        {
+          "id": "coal_stay5",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "coal_stay/coal_stay5.png"
+        }
+      ]
+    },
+    {
+      "name": "deadtree",
+      "textures": [
+        {
+          "id": "deadtree1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "deadtree/deadtree1.png"
+        },
+        {
+          "id": "deadtree2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "deadtree/deadtree2.png"
+        },
+        {
+          "id": "deadtree3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "deadtree/deadtree3.png"
+        }
+      ]
+    },
+    {
+      "name": "boat_w",
+      "textures": [
+        {
+          "id": "boat_w1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "boat_w/boat_w1.png"
+        }
+      ]
+    },
+    {
+      "name": "fishman",
+      "textures": [
+        {
+          "id": "fishman1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "fishman/fishman1.png"
+        }
+      ]
+    },
+    {
+      "name": "soft_burning",
+      "textures": [
+        {
+          "id": "burning1",
+          "frames_h": 11,
+          "frames_v": 3,
+          "anim_ms": 2500,
+          "file": "soft_burning/burning1.png"
+        },
+        {
+          "id": "burning1",
+          "frames_h": 11,
+          "frames_v": 3,
+          "anim_ms": 2500,
+          "file": "soft_burning/burning1.png"
+        }
+      ]
+    },
+    {
+      "name": "material0",
+      "textures": [
+        {
+          "id": "gold",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "material0/gold.png"
+        },
+        {
+          "id": "need_gold",
+          "frames_h": 4,
+          "frames_v": 2,
+          "anim_ms": 1000,
+          "file": "material0/need_gold.png"
+        }
+      ]
+    },
+    {
+      "name": "material1",
+      "textures": [
+        {
+          "id": "wood",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "material1/wood.png"
+        },
+        {
+          "id": "need_wood",
+          "frames_h": 4,
+          "frames_v": 2,
+          "anim_ms": 1000,
+          "file": "material1/need_wood.png"
+        }
+      ]
+    },
+    {
+      "name": "material2",
+      "textures": [
+        {
+          "id": "coal",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "material2/coal.png"
+        },
+        {
+          "id": "need_coal",
+          "frames_h": 4,
+          "frames_v": 2,
+          "anim_ms": 1000,
+          "file": "material2/need_coal.png"
+        }
+      ]
+    }
+  ]
+}

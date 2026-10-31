@@ -1,0 +1,17 @@
+{
+  "source": "/tmp/dark-oberon/dat/fonts.dat",
+  "groups": [
+    {
+      "name": "Basic Font",
+      "textures": [
+        {
+          "id": "Basic Font",
+          "frames_h": 16,
+          "frames_v": 16,
+          "anim_ms": 0,
+          "file": "Basic_Font/Basic_Font.png"
+        }
+      ]
+    }
+  ]
+}

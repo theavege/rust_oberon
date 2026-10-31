@@ -1,0 +1,392 @@
+{
+  "source": "/tmp/dark-oberon/dat/gui.dat",
+  "groups": [
+    {
+      "name": "panels",
+      "textures": [
+        {
+          "id": "bg_menu",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "panels/bg_menu.png"
+        },
+        {
+          "id": "bg_panel",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "panels/bg_panel.png"
+        },
+        {
+          "id": "bg_credits",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "panels/bg_credits.png"
+        }
+      ]
+    },
+    {
+      "name": "action_buttons",
+      "textures": [
+        {
+          "id": "bt_stay",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "action_buttons/bt_stay.png"
+        },
+        {
+          "id": "bt_move",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "action_buttons/bt_move.png"
+        },
+        {
+          "id": "bt_attack",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "action_buttons/bt_attack.png"
+        },
+        {
+          "id": "bt_mine",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "action_buttons/bt_mine.png"
+        },
+        {
+          "id": "bt_repair",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "action_buttons/bt_repair.png"
+        },
+        {
+          "id": "bt_build",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "action_buttons/bt_build.png"
+        },
+        {
+          "id": "bt_stay_down",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "action_buttons/bt_stay_down.png"
+        },
+        {
+          "id": "bt_move_down",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "action_buttons/bt_move_down.png"
+        },
+        {
+          "id": "bt_attack_down",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "action_buttons/bt_attack_down.png"
+        },
+        {
+          "id": "bt_mine_down",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "action_buttons/bt_mine_down.png"
+        },
+        {
+          "id": "bt_repair_down",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "action_buttons/bt_repair_down.png"
+        },
+        {
+          "id": "bt_build_down",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "action_buttons/bt_build_down.png"
+        }
+      ]
+    },
+    {
+      "name": "menu_buttons",
+      "textures": [
+        {
+          "id": "bt_play",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "menu_buttons/bt_play.png"
+        },
+        {
+          "id": "bt_quic_play",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "menu_buttons/bt_quic_play.png"
+        },
+        {
+          "id": "bt_options",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "menu_buttons/bt_options.png"
+        },
+        {
+          "id": "bt_credits",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "menu_buttons/bt_credits.png"
+        },
+        {
+          "id": "bt_quit",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "menu_buttons/bt_quit.png"
+        },
+        {
+          "id": "bt_resume",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "menu_buttons/bt_resume.png"
+        },
+        {
+          "id": "bt_create",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "menu_buttons/bt_create.png"
+        },
+        {
+          "id": "bt_connect",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "menu_buttons/bt_connect.png"
+        },
+        {
+          "id": "bt_disconnect",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "menu_buttons/bt_disconnect.png"
+        },
+        {
+          "id": "bt_back",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "menu_buttons/bt_back.png"
+        },
+        {
+          "id": "bt_video",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "menu_buttons/bt_video.png"
+        },
+        {
+          "id": "bt_audio",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "menu_buttons/bt_audio.png"
+        },
+        {
+          "id": "bt_ok",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "menu_buttons/bt_ok.png"
+        },
+        {
+          "id": "bt_yes",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "menu_buttons/bt_yes.png"
+        },
+        {
+          "id": "bt_no",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "menu_buttons/bt_no.png"
+        },
+        {
+          "id": "bt_cancel",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "menu_buttons/bt_cancel.png"
+        }
+      ]
+    },
+    {
+      "name": "segment_buttons",
+      "textures": [
+        {
+          "id": "bt_segment_0",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "segment_buttons/bt_segment_0.png"
+        },
+        {
+          "id": "bt_segment_1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "segment_buttons/bt_segment_1.png"
+        },
+        {
+          "id": "bt_segment_2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "segment_buttons/bt_segment_2.png"
+        },
+        {
+          "id": "bt_segment_all",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "segment_buttons/bt_segment_all.png"
+        }
+      ]
+    },
+    {
+      "name": "labels",
+      "textures": [
+        {
+          "id": "lbl_display",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "labels/lbl_display.png"
+        },
+        {
+          "id": "lbl_resolution",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "labels/lbl_resolution.png"
+        },
+        {
+          "id": "lbl_texture_filter",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "labels/lbl_texture_filter.png"
+        },
+        {
+          "id": "lbl_mipmap_filter",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "labels/lbl_mipmap_filter.png"
+        },
+        {
+          "id": "lbl_master",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "labels/lbl_master.png"
+        },
+        {
+          "id": "lbl_menu",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "labels/lbl_menu.png"
+        },
+        {
+          "id": "lbl_game",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "labels/lbl_game.png"
+        },
+        {
+          "id": "lbl_map",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "labels/lbl_map.png"
+        },
+        {
+          "id": "lbl_info",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "labels/lbl_info.png"
+        },
+        {
+          "id": "lbl_name",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "labels/lbl_name.png"
+        },
+        {
+          "id": "lbl_ip",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "labels/lbl_ip.png"
+        },
+        {
+          "id": "lbl_players",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "labels/lbl_players.png"
+        }
+      ]
+    },
+    {
+      "name": "guard_buttons",
+      "textures": [
+        {
+          "id": "bt_ignore",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "guard_buttons/bt_ignore.png"
+        },
+        {
+          "id": "bt_guard",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "guard_buttons/bt_guard.png"
+        },
+        {
+          "id": "bt_offensive",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "guard_buttons/bt_offensive.png"
+        },
+        {
+          "id": "bt_aggressive",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "guard_buttons/bt_aggressive.png"
+        }
+      ]
+    }
+  ]
+}

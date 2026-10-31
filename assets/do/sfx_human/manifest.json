@@ -1,0 +1,491 @@
+{
+  "source": "/tmp/dark-oberon/races/human/human.dat",
+  "sounds": [
+    {
+      "id": "airship_comm1",
+      "type": 0,
+      "format": 3,
+      "file": "airship_comm1.ogg"
+    },
+    {
+      "id": "airship_comm2",
+      "type": 0,
+      "format": 3,
+      "file": "airship_comm2.ogg"
+    },
+    {
+      "id": "airship_comm3",
+      "type": 0,
+      "format": 3,
+      "file": "airship_comm3.ogg"
+    },
+    {
+      "id": "airship_comm4",
+      "type": 0,
+      "format": 3,
+      "file": "airship_comm4.ogg"
+    },
+    {
+      "id": "airship_comm5",
+      "type": 0,
+      "format": 3,
+      "file": "airship_comm5.ogg"
+    },
+    {
+      "id": "airship_dead1",
+      "type": 0,
+      "format": 3,
+      "file": "airship_dead1.ogg"
+    },
+    {
+      "id": "airship_dead2",
+      "type": 0,
+      "format": 3,
+      "file": "airship_dead2.ogg"
+    },
+    {
+      "id": "airship_dead3",
+      "type": 0,
+      "format": 3,
+      "file": "airship_dead3.ogg"
+    },
+    {
+      "id": "airship_ready",
+      "type": 0,
+      "format": 3,
+      "file": "airship_ready.ogg"
+    },
+    {
+      "id": "airship_sel1",
+      "type": 0,
+      "format": 3,
+      "file": "airship_sel1.ogg"
+    },
+    {
+      "id": "airship_sel2",
+      "type": 0,
+      "format": 3,
+      "file": "airship_sel2.ogg"
+    },
+    {
+      "id": "catapult_comm",
+      "type": 0,
+      "format": 3,
+      "file": "catapult_comm.ogg"
+    },
+    {
+      "id": "catapult_fireoff",
+      "type": 0,
+      "format": 3,
+      "file": "catapult_fireoff.ogg"
+    },
+    {
+      "id": "catapult_hit",
+      "type": 0,
+      "format": 3,
+      "file": "catapult_hit.ogg"
+    },
+    {
+      "id": "catapult_sel",
+      "type": 0,
+      "format": 3,
+      "file": "catapult_sel.ogg"
+    },
+    {
+      "id": "footman_comm1",
+      "type": 0,
+      "format": 3,
+      "file": "footman_comm1.ogg"
+    },
+    {
+      "id": "footman_comm2",
+      "type": 0,
+      "format": 3,
+      "file": "footman_comm2.ogg"
+    },
+    {
+      "id": "footman_comm3",
+      "type": 0,
+      "format": 3,
+      "file": "footman_comm3.ogg"
+    },
+    {
+      "id": "footman_comm4",
+      "type": 0,
+      "format": 3,
+      "file": "footman_comm4.ogg"
+    },
+    {
+      "id": "footman_comm5",
+      "type": 0,
+      "format": 3,
+      "file": "footman_comm5.ogg"
+    },
+    {
+      "id": "footman_comm6",
+      "type": 0,
+      "format": 3,
+      "file": "footman_comm6.ogg"
+    },
+    {
+      "id": "footman_comm7",
+      "type": 0,
+      "format": 3,
+      "file": "footman_comm7.ogg"
+    },
+    {
+      "id": "footman_dead1",
+      "type": 0,
+      "format": 3,
+      "file": "footman_dead1.ogg"
+    },
+    {
+      "id": "footman_dead2",
+      "type": 0,
+      "format": 3,
+      "file": "footman_dead2.ogg"
+    },
+    {
+      "id": "footman_dead3",
+      "type": 0,
+      "format": 3,
+      "file": "footman_dead3.ogg"
+    },
+    {
+      "id": "footman_dead4",
+      "type": 0,
+      "format": 3,
+      "file": "footman_dead4.ogg"
+    },
+    {
+      "id": "footman_hit01",
+      "type": 0,
+      "format": 3,
+      "file": "footman_hit01.ogg"
+    },
+    {
+      "id": "footman_hit02",
+      "type": 0,
+      "format": 3,
+      "file": "footman_hit02.ogg"
+    },
+    {
+      "id": "footman_hit03",
+      "type": 0,
+      "format": 3,
+      "file": "footman_hit03.ogg"
+    },
+    {
+      "id": "footman_hit04",
+      "type": 0,
+      "format": 3,
+      "file": "footman_hit04.ogg"
+    },
+    {
+      "id": "footman_hit05",
+      "type": 0,
+      "format": 3,
+      "file": "footman_hit05.ogg"
+    },
+    {
+      "id": "footman_hit06",
+      "type": 0,
+      "format": 3,
+      "file": "footman_hit06.ogg"
+    },
+    {
+      "id": "footman_hit07",
+      "type": 0,
+      "format": 3,
+      "file": "footman_hit07.ogg"
+    },
+    {
+      "id": "footman_hit08",
+      "type": 0,
+      "format": 3,
+      "file": "footman_hit08.ogg"
+    },
+    {
+      "id": "footman_hit09",
+      "type": 0,
+      "format": 3,
+      "file": "footman_hit09.ogg"
+    },
+    {
+      "id": "footman_hit10",
+      "type": 0,
+      "format": 3,
+      "file": "footman_hit10.ogg"
+    },
+    {
+      "id": "footman_hit11",
+      "type": 0,
+      "format": 3,
+      "file": "footman_hit11.ogg"
+    },
+    {
+      "id": "footman_ready",
+      "type": 0,
+      "format": 3,
+      "file": "footman_ready.ogg"
+    },
+    {
+      "id": "footman_sel1",
+      "type": 0,
+      "format": 3,
+      "file": "footman_sel1.ogg"
+    },
+    {
+      "id": "footman_sel2",
+      "type": 0,
+      "format": 3,
+      "file": "footman_sel2.ogg"
+    },
+    {
+      "id": "footman_sel3",
+      "type": 0,
+      "format": 3,
+      "file": "footman_sel3.ogg"
+    },
+    {
+      "id": "footman_sel4",
+      "type": 0,
+      "format": 3,
+      "file": "footman_sel4.ogg"
+    },
+    {
+      "id": "footman_sel5",
+      "type": 0,
+      "format": 3,
+      "file": "footman_sel5.ogg"
+    },
+    {
+      "id": "shed_sel",
+      "type": 0,
+      "format": 3,
+      "file": "shed_sel.ogg"
+    },
+    {
+      "id": "townhall_sel",
+      "type": 0,
+      "format": 3,
+      "file": "townhall_sel.ogg"
+    },
+    {
+      "id": "peasant_comm1",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_comm1.ogg"
+    },
+    {
+      "id": "peasant_comm2",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_comm2.ogg"
+    },
+    {
+      "id": "peasant_comm3",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_comm3.ogg"
+    },
+    {
+      "id": "peasant_dead1",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_dead1.ogg"
+    },
+    {
+      "id": "peasant_dead2",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_dead2.ogg"
+    },
+    {
+      "id": "peasant_dead3",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_dead3.ogg"
+    },
+    {
+      "id": "peasant_dead4",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_dead4.ogg"
+    },
+    {
+      "id": "peasant_dead5",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_dead5.ogg"
+    },
+    {
+      "id": "peasant_dead6",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_dead6.ogg"
+    },
+    {
+      "id": "peasant_chop1",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_chop1.ogg"
+    },
+    {
+      "id": "peasant_chop2",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_chop2.ogg"
+    },
+    {
+      "id": "peasant_chop3",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_chop3.ogg"
+    },
+    {
+      "id": "peasant_chop4",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_chop4.ogg"
+    },
+    {
+      "id": "peasant_chop5",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_chop5.ogg"
+    },
+    {
+      "id": "peasant_chop6",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_chop6.ogg"
+    },
+    {
+      "id": "peasant_chop7",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_chop7.ogg"
+    },
+    {
+      "id": "peasant_ready",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_ready.ogg"
+    },
+    {
+      "id": "peasant_sel1",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_sel1.ogg"
+    },
+    {
+      "id": "peasant_sel2",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_sel2.ogg"
+    },
+    {
+      "id": "peasant_sel3",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_sel3.ogg"
+    },
+    {
+      "id": "peasant_sel4",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_sel4.ogg"
+    },
+    {
+      "id": "peasant_wc1",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_wc1.ogg"
+    },
+    {
+      "id": "peasant_wc2",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_wc2.ogg"
+    },
+    {
+      "id": "peasant_wc3",
+      "type": 0,
+      "format": 3,
+      "file": "peasant_wc3.ogg"
+    },
+    {
+      "id": "building_selected",
+      "type": 0,
+      "format": 3,
+      "file": "building_selected.ogg"
+    },
+    {
+      "id": "burning",
+      "type": 0,
+      "format": 3,
+      "file": "burning.ogg"
+    },
+    {
+      "id": "construction",
+      "type": 0,
+      "format": 3,
+      "file": "construction.ogg"
+    },
+    {
+      "id": "error",
+      "type": 0,
+      "format": 3,
+      "file": "error.ogg"
+    },
+    {
+      "id": "explosion1",
+      "type": 0,
+      "format": 3,
+      "file": "explosion1.ogg"
+    },
+    {
+      "id": "explosion2",
+      "type": 0,
+      "format": 3,
+      "file": "explosion2.ogg"
+    },
+    {
+      "id": "explosion3",
+      "type": 0,
+      "format": 3,
+      "file": "explosion3.ogg"
+    },
+    {
+      "id": "explosion4",
+      "type": 0,
+      "format": 3,
+      "file": "explosion4.ogg"
+    },
+    {
+      "id": "placement",
+      "type": 0,
+      "format": 3,
+      "file": "placement.ogg"
+    },
+    {
+      "id": "farm_sel1",
+      "type": 0,
+      "format": 3,
+      "file": "farm_sel1.ogg"
+    },
+    {
+      "id": "farm_sel2",
+      "type": 0,
+      "format": 3,
+      "file": "farm_sel2.ogg"
+    },
+    {
+      "id": "farm_sel3",
+      "type": 0,
+      "format": 3,
+      "file": "farm_sel3.ogg"
+    }
+  ]
+}
