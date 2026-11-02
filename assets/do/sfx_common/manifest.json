@@ -1,0 +1,29 @@
+{
+  "source": "/tmp/dark-oberon/dat/gui.dat",
+  "sounds": [
+    {
+      "id": "menu_music",
+      "type": 1,
+      "format": 2,
+      "file": "menu_music.bin"
+    },
+    {
+      "id": "button_click",
+      "type": 0,
+      "format": 3,
+      "file": "button_click.ogg"
+    },
+    {
+      "id": "game_music",
+      "type": 1,
+      "format": 2,
+      "file": "game_music.bin"
+    },
+    {
+      "id": "component_click",
+      "type": 0,
+      "format": 3,
+      "file": "component_click.ogg"
+    }
+  ]
+}

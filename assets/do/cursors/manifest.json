@@ -1,0 +1,143 @@
+{
+  "source": "/tmp/dark-oberon/dat/cursors.dat",
+  "groups": [
+    {
+      "name": "Default Cursor Set",
+      "textures": [
+        {
+          "id": "default",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "Default_Cursor_Set/default.png"
+        },
+        {
+          "id": "select",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "Default_Cursor_Set/select.png"
+        },
+        {
+          "id": "select_plus",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "Default_Cursor_Set/select_plus.png"
+        },
+        {
+          "id": "can_move",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "Default_Cursor_Set/can_move.png"
+        },
+        {
+          "id": "cant_move",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "Default_Cursor_Set/cant_move.png"
+        },
+        {
+          "id": "can_attack",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "Default_Cursor_Set/can_attack.png"
+        },
+        {
+          "id": "cant_attack",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "Default_Cursor_Set/cant_attack.png"
+        },
+        {
+          "id": "can_mine",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "Default_Cursor_Set/can_mine.png"
+        },
+        {
+          "id": "cant_mine",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "Default_Cursor_Set/cant_mine.png"
+        },
+        {
+          "id": "can_repair",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "Default_Cursor_Set/can_repair.png"
+        },
+        {
+          "id": "cant_repair",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "Default_Cursor_Set/cant_repair.png"
+        },
+        {
+          "id": "can_build",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "Default_Cursor_Set/can_build.png"
+        },
+        {
+          "id": "cant_build",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "Default_Cursor_Set/cant_build.png"
+        },
+        {
+          "id": "can_hide",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "Default_Cursor_Set/can_hide.png"
+        },
+        {
+          "id": "cant_hide",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "Default_Cursor_Set/cant_hide.png"
+        },
+        {
+          "id": "eject",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "Default_Cursor_Set/eject.png"
+        },
+        {
+          "id": "circle_in",
+          "frames_h": 8,
+          "frames_v": 2,
+          "anim_ms": 2000,
+          "file": "Default_Cursor_Set/circle_in.png"
+        },
+        {
+          "id": "circle_out",
+          "frames_h": 8,
+          "frames_v": 2,
+          "anim_ms": 2000,
+          "file": "Default_Cursor_Set/circle_out.png"
+        },
+        {
+          "id": "cross",
+          "frames_h": 8,
+          "frames_v": 2,
+          "anim_ms": 2000,
+          "file": "Default_Cursor_Set/cross.png"
+        }
+      ]
+    }
+  ]
+}

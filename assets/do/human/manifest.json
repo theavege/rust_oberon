@@ -1,0 +1,1641 @@
+{
+  "source": "/tmp/dark-oberon/races/human/human.dat",
+  "groups": [
+    {
+      "name": "food",
+      "textures": [
+        {
+          "id": "food",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "food/food.png"
+        },
+        {
+          "id": "need_food",
+          "frames_h": 4,
+          "frames_v": 2,
+          "anim_ms": 1000,
+          "file": "food/need_food.png"
+        }
+      ]
+    },
+    {
+      "name": "energy",
+      "textures": [
+        {
+          "id": "energy",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "energy/energy.png"
+        },
+        {
+          "id": "need_energy",
+          "frames_h": 4,
+          "frames_v": 2,
+          "anim_ms": 1000,
+          "file": "energy/need_energy.png"
+        },
+        {
+          "id": "disabled_energy",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "energy/disabled_energy.png"
+        }
+      ]
+    },
+    {
+      "name": "unit_burning",
+      "textures": [
+        {
+          "id": "burning1",
+          "frames_h": 11,
+          "frames_v": 3,
+          "anim_ms": 2500,
+          "file": "unit_burning/burning1.png"
+        },
+        {
+          "id": "burning1",
+          "frames_h": 11,
+          "frames_v": 3,
+          "anim_ms": 2500,
+          "file": "unit_burning/burning1.png"
+        }
+      ]
+    },
+    {
+      "name": "building_burning",
+      "textures": [
+        {
+          "id": "burning1",
+          "frames_h": 11,
+          "frames_v": 3,
+          "anim_ms": 2500,
+          "file": "building_burning/burning1.png"
+        },
+        {
+          "id": "burning2",
+          "frames_h": 7,
+          "frames_v": 1,
+          "anim_ms": 1000,
+          "file": "building_burning/burning2.png"
+        }
+      ]
+    },
+    {
+      "name": "footman_picture",
+      "textures": [
+        {
+          "id": "footman_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_picture/footman_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "footman_stay",
+      "textures": [
+        {
+          "id": "footman_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_stay/footman_stay1.png"
+        },
+        {
+          "id": "footman_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_stay/footman_stay2.png"
+        },
+        {
+          "id": "footman_stay3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_stay/footman_stay3.png"
+        },
+        {
+          "id": "footman_stay4",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_stay/footman_stay4.png"
+        },
+        {
+          "id": "footman_stay5",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_stay/footman_stay5.png"
+        },
+        {
+          "id": "footman_stay6",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_stay/footman_stay6.png"
+        },
+        {
+          "id": "footman_stay7",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_stay/footman_stay7.png"
+        },
+        {
+          "id": "footman_stay8",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_stay/footman_stay8.png"
+        }
+      ]
+    },
+    {
+      "name": "footman_move",
+      "textures": [
+        {
+          "id": "footman_move1",
+          "frames_h": 3,
+          "frames_v": 2,
+          "anim_ms": 600,
+          "file": "footman_move/footman_move1.png"
+        },
+        {
+          "id": "footman_move2",
+          "frames_h": 3,
+          "frames_v": 2,
+          "anim_ms": 600,
+          "file": "footman_move/footman_move2.png"
+        },
+        {
+          "id": "footman_move3",
+          "frames_h": 3,
+          "frames_v": 2,
+          "anim_ms": 600,
+          "file": "footman_move/footman_move3.png"
+        },
+        {
+          "id": "footman_move4",
+          "frames_h": 3,
+          "frames_v": 2,
+          "anim_ms": 600,
+          "file": "footman_move/footman_move4.png"
+        },
+        {
+          "id": "footman_move5",
+          "frames_h": 3,
+          "frames_v": 2,
+          "anim_ms": 600,
+          "file": "footman_move/footman_move5.png"
+        },
+        {
+          "id": "footman_move6",
+          "frames_h": 3,
+          "frames_v": 2,
+          "anim_ms": 600,
+          "file": "footman_move/footman_move6.png"
+        },
+        {
+          "id": "footman_move7",
+          "frames_h": 3,
+          "frames_v": 2,
+          "anim_ms": 600,
+          "file": "footman_move/footman_move7.png"
+        },
+        {
+          "id": "footman_move8",
+          "frames_h": 3,
+          "frames_v": 2,
+          "anim_ms": 600,
+          "file": "footman_move/footman_move8.png"
+        }
+      ]
+    },
+    {
+      "name": "footman_attack",
+      "textures": [
+        {
+          "id": "footman_attack1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_attack/footman_attack1.png"
+        },
+        {
+          "id": "footman_attack2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_attack/footman_attack2.png"
+        },
+        {
+          "id": "footman_attack3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_attack/footman_attack3.png"
+        },
+        {
+          "id": "footman_attack4",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_attack/footman_attack4.png"
+        },
+        {
+          "id": "footman_attack5",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_attack/footman_attack5.png"
+        },
+        {
+          "id": "footman_attack6",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_attack/footman_attack6.png"
+        },
+        {
+          "id": "footman_attack7",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_attack/footman_attack7.png"
+        },
+        {
+          "id": "footman_attack8",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_attack/footman_attack8.png"
+        }
+      ]
+    },
+    {
+      "name": "footman_zombie",
+      "textures": [
+        {
+          "id": "footman_zombie1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_zombie/footman_zombie1.png"
+        },
+        {
+          "id": "footman_zombie2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_zombie/footman_zombie2.png"
+        },
+        {
+          "id": "footman_zombie3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_zombie/footman_zombie3.png"
+        },
+        {
+          "id": "footman_zombie4",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_zombie/footman_zombie4.png"
+        },
+        {
+          "id": "footman_zombie5",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_zombie/footman_zombie5.png"
+        },
+        {
+          "id": "footman_zombie6",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_zombie/footman_zombie6.png"
+        },
+        {
+          "id": "footman_zombie7",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_zombie/footman_zombie7.png"
+        },
+        {
+          "id": "footman_zombie8",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "footman_zombie/footman_zombie8.png"
+        }
+      ]
+    },
+    {
+      "name": "catapult_picture",
+      "textures": [
+        {
+          "id": "catapult_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "catapult_picture/catapult_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "catapult_stay",
+      "textures": [
+        {
+          "id": "catapult_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "catapult_stay/catapult_stay1.png"
+        },
+        {
+          "id": "catapult_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "catapult_stay/catapult_stay2.png"
+        },
+        {
+          "id": "catapult_stay3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "catapult_stay/catapult_stay3.png"
+        },
+        {
+          "id": "catapult_stay4",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "catapult_stay/catapult_stay4.png"
+        },
+        {
+          "id": "catapult_stay5",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "catapult_stay/catapult_stay5.png"
+        },
+        {
+          "id": "catapult_stay6",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "catapult_stay/catapult_stay6.png"
+        },
+        {
+          "id": "catapult_stay7",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "catapult_stay/catapult_stay7.png"
+        },
+        {
+          "id": "catapult_stay8",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "catapult_stay/catapult_stay8.png"
+        }
+      ]
+    },
+    {
+      "name": "catapult_move",
+      "textures": [
+        {
+          "id": "catapult_move1",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 200,
+          "file": "catapult_move/catapult_move1.png"
+        },
+        {
+          "id": "catapult_move2",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 200,
+          "file": "catapult_move/catapult_move2.png"
+        },
+        {
+          "id": "catapult_move3",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 200,
+          "file": "catapult_move/catapult_move3.png"
+        },
+        {
+          "id": "catapult_move4",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 200,
+          "file": "catapult_move/catapult_move4.png"
+        },
+        {
+          "id": "catapult_move5",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 200,
+          "file": "catapult_move/catapult_move5.png"
+        },
+        {
+          "id": "catapult_move6",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 200,
+          "file": "catapult_move/catapult_move6.png"
+        },
+        {
+          "id": "catapult_move7",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 200,
+          "file": "catapult_move/catapult_move7.png"
+        },
+        {
+          "id": "catapult_move8",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 200,
+          "file": "catapult_move/catapult_move8.png"
+        }
+      ]
+    },
+    {
+      "name": "catapult_zombie",
+      "textures": [
+        {
+          "id": "catapult_zombie1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "catapult_zombie/catapult_zombie1.png"
+        }
+      ]
+    },
+    {
+      "name": "catapult_projectile",
+      "textures": [
+        {
+          "id": "catapult_projectile",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "catapult_projectile/catapult_projectile.png"
+        }
+      ]
+    },
+    {
+      "name": "airship_picture",
+      "textures": [
+        {
+          "id": "airship_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "airship_picture/airship_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "airship_stay",
+      "textures": [
+        {
+          "id": "airship_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "airship_stay/airship_stay1.png"
+        },
+        {
+          "id": "airship_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "airship_stay/airship_stay2.png"
+        },
+        {
+          "id": "airship_stay3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "airship_stay/airship_stay3.png"
+        },
+        {
+          "id": "airship_stay4",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "airship_stay/airship_stay4.png"
+        },
+        {
+          "id": "airship_stay5",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "airship_stay/airship_stay5.png"
+        },
+        {
+          "id": "airship_stay6",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "airship_stay/airship_stay6.png"
+        },
+        {
+          "id": "airship_stay7",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "airship_stay/airship_stay7.png"
+        },
+        {
+          "id": "airship_stay8",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "airship_stay/airship_stay8.png"
+        }
+      ]
+    },
+    {
+      "name": "airship_anchor",
+      "textures": [
+        {
+          "id": "airship_anchor1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "airship_anchor/airship_anchor1.png"
+        },
+        {
+          "id": "airship_anchor2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "airship_anchor/airship_anchor2.png"
+        },
+        {
+          "id": "airship_anchor3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "airship_anchor/airship_anchor3.png"
+        },
+        {
+          "id": "airship_anchor4",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "airship_anchor/airship_anchor4.png"
+        },
+        {
+          "id": "airship_anchor5",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "airship_anchor/airship_anchor5.png"
+        },
+        {
+          "id": "airship_anchor6",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "airship_anchor/airship_anchor6.png"
+        },
+        {
+          "id": "airship_anchor7",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "airship_anchor/airship_anchor7.png"
+        },
+        {
+          "id": "airship_anchor8",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "airship_anchor/airship_anchor8.png"
+        }
+      ]
+    },
+    {
+      "name": "airship_move",
+      "textures": [
+        {
+          "id": "airship_move1",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 200,
+          "file": "airship_move/airship_move1.png"
+        },
+        {
+          "id": "airship_move2",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 200,
+          "file": "airship_move/airship_move2.png"
+        },
+        {
+          "id": "airship_move3",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 200,
+          "file": "airship_move/airship_move3.png"
+        },
+        {
+          "id": "airship_move4",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 200,
+          "file": "airship_move/airship_move4.png"
+        },
+        {
+          "id": "airship_move5",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 200,
+          "file": "airship_move/airship_move5.png"
+        },
+        {
+          "id": "airship_move6",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 200,
+          "file": "airship_move/airship_move6.png"
+        },
+        {
+          "id": "airship_move7",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 200,
+          "file": "airship_move/airship_move7.png"
+        },
+        {
+          "id": "airship_move8",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 200,
+          "file": "airship_move/airship_move8.png"
+        }
+      ]
+    },
+    {
+      "name": "airship_land",
+      "textures": [
+        {
+          "id": "airship_land1",
+          "frames_h": 4,
+          "frames_v": 2,
+          "anim_ms": 0,
+          "file": "airship_land/airship_land1.png"
+        },
+        {
+          "id": "airship_land2",
+          "frames_h": 4,
+          "frames_v": 2,
+          "anim_ms": 0,
+          "file": "airship_land/airship_land2.png"
+        },
+        {
+          "id": "airship_land3",
+          "frames_h": 4,
+          "frames_v": 2,
+          "anim_ms": 0,
+          "file": "airship_land/airship_land3.png"
+        },
+        {
+          "id": "airship_land4",
+          "frames_h": 4,
+          "frames_v": 2,
+          "anim_ms": 0,
+          "file": "airship_land/airship_land4.png"
+        },
+        {
+          "id": "airship_land5",
+          "frames_h": 4,
+          "frames_v": 2,
+          "anim_ms": 0,
+          "file": "airship_land/airship_land5.png"
+        },
+        {
+          "id": "airship_land6",
+          "frames_h": 4,
+          "frames_v": 2,
+          "anim_ms": 0,
+          "file": "airship_land/airship_land6.png"
+        },
+        {
+          "id": "airship_land7",
+          "frames_h": 4,
+          "frames_v": 2,
+          "anim_ms": 0,
+          "file": "airship_land/airship_land7.png"
+        },
+        {
+          "id": "airship_land8",
+          "frames_h": 4,
+          "frames_v": 2,
+          "anim_ms": 0,
+          "file": "airship_land/airship_land8.png"
+        }
+      ]
+    },
+    {
+      "name": "townhall_picture",
+      "textures": [
+        {
+          "id": "tawnhall_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "townhall_picture/tawnhall_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "townhall_stay",
+      "textures": [
+        {
+          "id": "townhall_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "townhall_stay/townhall_stay1.png"
+        },
+        {
+          "id": "townhall_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "townhall_stay/townhall_stay2.png"
+        }
+      ]
+    },
+    {
+      "name": "townhall_build",
+      "textures": [
+        {
+          "id": "townhall_build1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "townhall_build/townhall_build1.png"
+        },
+        {
+          "id": "townhall_build2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "townhall_build/townhall_build2.png"
+        }
+      ]
+    },
+    {
+      "name": "townhall_zombie",
+      "textures": [
+        {
+          "id": "tawnhall_zombie1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "townhall_zombie/tawnhall_zombie1.png"
+        }
+      ]
+    },
+    {
+      "name": "fort_picture",
+      "textures": [
+        {
+          "id": "fort_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "fort_picture/fort_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "fort_stay",
+      "textures": [
+        {
+          "id": "fort_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "fort_stay/fort_stay1.png"
+        },
+        {
+          "id": "fort_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "fort_stay/fort_stay2.png"
+        }
+      ]
+    },
+    {
+      "name": "fort_build",
+      "textures": [
+        {
+          "id": "fort_build1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "fort_build/fort_build1.png"
+        },
+        {
+          "id": "fort_build2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "fort_build/fort_build2.png"
+        }
+      ]
+    },
+    {
+      "name": "castle_picture",
+      "textures": [
+        {
+          "id": "castle_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "castle_picture/castle_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "castle_stay",
+      "textures": [
+        {
+          "id": "castle_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "castle_stay/castle_stay1.png"
+        },
+        {
+          "id": "castle_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "castle_stay/castle_stay2.png"
+        }
+      ]
+    },
+    {
+      "name": "castle_build",
+      "textures": [
+        {
+          "id": "castle_build1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "castle_build/castle_build1.png"
+        },
+        {
+          "id": "castle_build2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "castle_build/castle_build2.png"
+        }
+      ]
+    },
+    {
+      "name": "farm_picture",
+      "textures": [
+        {
+          "id": "farm_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "farm_picture/farm_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "farm_stay",
+      "textures": [
+        {
+          "id": "farm_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "farm_stay/farm_stay1.png"
+        },
+        {
+          "id": "farm_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "farm_stay/farm_stay2.png"
+        }
+      ]
+    },
+    {
+      "name": "farm_build",
+      "textures": [
+        {
+          "id": "farm_build1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "farm_build/farm_build1.png"
+        },
+        {
+          "id": "farm_build2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "farm_build/farm_build2.png"
+        }
+      ]
+    },
+    {
+      "name": "farm_zombie",
+      "textures": [
+        {
+          "id": "farm_zombie1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "farm_zombie/farm_zombie1.png"
+        }
+      ]
+    },
+    {
+      "name": "barracks_picture",
+      "textures": [
+        {
+          "id": "barracks_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "barracks_picture/barracks_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "barracks_stay",
+      "textures": [
+        {
+          "id": "barracks_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "barracks_stay/barracks_stay1.png"
+        },
+        {
+          "id": "barracks_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "barracks_stay/barracks_stay2.png"
+        }
+      ]
+    },
+    {
+      "name": "barracks_build",
+      "textures": [
+        {
+          "id": "barracks_build1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "barracks_build/barracks_build1.png"
+        },
+        {
+          "id": "barracks_build2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "barracks_build/barracks_build2.png"
+        },
+        {
+          "id": "barracks_build3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "barracks_build/barracks_build3.png"
+        }
+      ]
+    },
+    {
+      "name": "barracks_zombie",
+      "textures": [
+        {
+          "id": "barracks_zombie1",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "barracks_zombie/barracks_zombie1.png"
+        }
+      ]
+    },
+    {
+      "name": "tower_picture",
+      "textures": [
+        {
+          "id": "tower_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "tower_picture/tower_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "tower_stay",
+      "textures": [
+        {
+          "id": "tower_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "tower_stay/tower_stay1.png"
+        },
+        {
+          "id": "tower_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "tower_stay/tower_stay2.png"
+        }
+      ]
+    },
+    {
+      "name": "tower_build",
+      "textures": [
+        {
+          "id": "tower_build1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "tower_build/tower_build1.png"
+        },
+        {
+          "id": "tower_build2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "tower_build/tower_build2.png"
+        }
+      ]
+    },
+    {
+      "name": "tower_zombie",
+      "textures": [
+        {
+          "id": "tower_zombie1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "tower_zombie/tower_zombie1.png"
+        }
+      ]
+    },
+    {
+      "name": "cannontower_picture",
+      "textures": [
+        {
+          "id": "cannontower_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cannontower_picture/cannontower_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "cannontower_stay",
+      "textures": [
+        {
+          "id": "cannontower_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cannontower_stay/cannontower_stay1.png"
+        },
+        {
+          "id": "cannontower_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cannontower_stay/cannontower_stay2.png"
+        }
+      ]
+    },
+    {
+      "name": "cannontower_build",
+      "textures": [
+        {
+          "id": "cannontower_build1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "cannontower_build/cannontower_build1.png"
+        }
+      ]
+    },
+    {
+      "name": "shed_picture",
+      "textures": [
+        {
+          "id": "shed_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "shed_picture/shed_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "shed_stay",
+      "textures": [
+        {
+          "id": "shed_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "shed_stay/shed_stay1.png"
+        },
+        {
+          "id": "shed_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "shed_stay/shed_stay2.png"
+        }
+      ]
+    },
+    {
+      "name": "shed_build",
+      "textures": [
+        {
+          "id": "shed_build1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "shed_build/shed_build1.png"
+        },
+        {
+          "id": "shed_build2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "shed_build/shed_build2.png"
+        },
+        {
+          "id": "shed_build3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "shed_build/shed_build3.png"
+        }
+      ]
+    },
+    {
+      "name": "shed_zombie",
+      "textures": [
+        {
+          "id": "shed_zombie1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "shed_zombie/shed_zombie1.png"
+        }
+      ]
+    },
+    {
+      "name": "manufactory_picture",
+      "textures": [
+        {
+          "id": "manufactory_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "manufactory_picture/manufactory_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "manufactory_stay",
+      "textures": [
+        {
+          "id": "manufactory_stay1",
+          "frames_h": 2,
+          "frames_v": 1,
+          "anim_ms": 400,
+          "file": "manufactory_stay/manufactory_stay1.png"
+        },
+        {
+          "id": "manufactory_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "manufactory_stay/manufactory_stay2.png"
+        }
+      ]
+    },
+    {
+      "name": "manufactory_build",
+      "textures": [
+        {
+          "id": "manufactory_build1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "manufactory_build/manufactory_build1.png"
+        },
+        {
+          "id": "manufactory_build2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "manufactory_build/manufactory_build2.png"
+        },
+        {
+          "id": "manufactory_build3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "manufactory_build/manufactory_build3.png"
+        }
+      ]
+    },
+    {
+      "name": "peasant_picture",
+      "textures": [
+        {
+          "id": "peasant_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "peasant_picture/peasant_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "peasant_stay",
+      "textures": [
+        {
+          "id": "peasant_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "peasant_stay/peasant_stay1.png"
+        },
+        {
+          "id": "peasant_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "peasant_stay/peasant_stay2.png"
+        },
+        {
+          "id": "peasant_stay3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "peasant_stay/peasant_stay3.png"
+        },
+        {
+          "id": "peasant_stay4",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "peasant_stay/peasant_stay4.png"
+        },
+        {
+          "id": "peasant_stay5",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "peasant_stay/peasant_stay5.png"
+        },
+        {
+          "id": "peasant_stay6",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "peasant_stay/peasant_stay6.png"
+        },
+        {
+          "id": "peasant_stay7",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "peasant_stay/peasant_stay7.png"
+        },
+        {
+          "id": "peasant_stay8",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "peasant_stay/peasant_stay8.png"
+        }
+      ]
+    },
+    {
+      "name": "peasant_zombie",
+      "textures": [
+        {
+          "id": "peasant_zombie1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "peasant_zombie/peasant_zombie1.png"
+        },
+        {
+          "id": "peasant_zombie2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "peasant_zombie/peasant_zombie2.png"
+        },
+        {
+          "id": "peasant_zombie3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "peasant_zombie/peasant_zombie3.png"
+        },
+        {
+          "id": "peasant_zombie4",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "peasant_zombie/peasant_zombie4.png"
+        },
+        {
+          "id": "peasant_zombie5",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "peasant_zombie/peasant_zombie5.png"
+        },
+        {
+          "id": "peasant_zombie6",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "peasant_zombie/peasant_zombie6.png"
+        },
+        {
+          "id": "peasant_zombie7",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "peasant_zombie/peasant_zombie7.png"
+        },
+        {
+          "id": "peasant_zombie8",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "peasant_zombie/peasant_zombie8.png"
+        }
+      ]
+    },
+    {
+      "name": "moleman_picture",
+      "textures": [
+        {
+          "id": "moleman_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "moleman_picture/moleman_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "moleman_stay",
+      "textures": [
+        {
+          "id": "moleman_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "moleman_stay/moleman_stay1.png"
+        },
+        {
+          "id": "moleman_stay2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "moleman_stay/moleman_stay2.png"
+        },
+        {
+          "id": "moleman_stay3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "moleman_stay/moleman_stay3.png"
+        },
+        {
+          "id": "moleman_stay4",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "moleman_stay/moleman_stay4.png"
+        },
+        {
+          "id": "moleman_stay5",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "moleman_stay/moleman_stay5.png"
+        },
+        {
+          "id": "moleman_stay6",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "moleman_stay/moleman_stay6.png"
+        },
+        {
+          "id": "moleman_stay7",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "moleman_stay/moleman_stay7.png"
+        },
+        {
+          "id": "moleman_stay8",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "moleman_stay/moleman_stay8.png"
+        }
+      ]
+    },
+    {
+      "name": "moleman_zombie",
+      "textures": [
+        {
+          "id": "moleman_zombie1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "moleman_zombie/moleman_zombie1.png"
+        },
+        {
+          "id": "moleman_zombie2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "moleman_zombie/moleman_zombie2.png"
+        },
+        {
+          "id": "moleman_zombie3",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "moleman_zombie/moleman_zombie3.png"
+        },
+        {
+          "id": "moleman_zombie4",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "moleman_zombie/moleman_zombie4.png"
+        },
+        {
+          "id": "moleman_zombie5",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "moleman_zombie/moleman_zombie5.png"
+        },
+        {
+          "id": "moleman_zombie6",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "moleman_zombie/moleman_zombie6.png"
+        },
+        {
+          "id": "moleman_zombie7",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "moleman_zombie/moleman_zombie7.png"
+        },
+        {
+          "id": "moleman_zombie8",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "moleman_zombie/moleman_zombie8.png"
+        }
+      ]
+    },
+    {
+      "name": "wall_picture",
+      "textures": [
+        {
+          "id": "wall_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "wall_picture/wall_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "wall_stay",
+      "textures": [
+        {
+          "id": "wall_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "wall_stay/wall_stay1.png"
+        }
+      ]
+    },
+    {
+      "name": "wall_zombie",
+      "textures": [
+        {
+          "id": "wall_zombie1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "wall_zombie/wall_zombie1.png"
+        }
+      ]
+    },
+    {
+      "name": "citadel_picture",
+      "textures": [
+        {
+          "id": "citadel_picture",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "citadel_picture/citadel_picture.png"
+        }
+      ]
+    },
+    {
+      "name": "citadel_stay",
+      "textures": [
+        {
+          "id": "citadel_stay1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "citadel_stay/citadel_stay1.png"
+        }
+      ]
+    },
+    {
+      "name": "citadel_build",
+      "textures": [
+        {
+          "id": "citadel_build1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "citadel_build/citadel_build1.png"
+        },
+        {
+          "id": "citadel_build2",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "citadel_build/citadel_build2.png"
+        }
+      ]
+    },
+    {
+      "name": "citadel_zombie",
+      "textures": [
+        {
+          "id": "citadel_zombie1",
+          "frames_h": 1,
+          "frames_v": 1,
+          "anim_ms": 0,
+          "file": "citadel_zombie/citadel_zombie1.png"
+        }
+      ]
+    }
+  ]
+}
