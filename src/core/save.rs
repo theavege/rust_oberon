@@ -3,14 +3,15 @@
 
 use bevy::prelude::*;
 use serde::{Deserialize, Serialize};
+use std::collections::VecDeque;
 use std::path::Path;
 
 use crate::core::{
     gamestate::GameState,
     map::{NavigationGrid, VisibilityGrid},
     units::{
-        Building, ConstructionSite, Health, Player, PlayerEconomy, ResourceNode, Unit, UnitKind,
-        WorldPosition,
+        Building, ConstructionSite, Health, MovePath, Player, PlayerEconomy, ResourceNode, Unit,
+        UnitKind, WorldPosition,
     },
 };
 
@@ -42,6 +43,11 @@ struct Snapshot {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+struct SavedMovePath {
+    path: Vec<[i32; 2]>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
 enum SavedEntity {
     Unit {
         kind: SavedUnitKind,
@@ -49,6 +55,7 @@ enum SavedEntity {
         position: [f32; 2],
         hp: f32,
         max_hp: f32,
+        move_path: Option<SavedMovePath>,
     },
     Building {
         owner: u8,
@@ -113,7 +120,14 @@ fn process_save_requests(
     mut navigation: ResMut<NavigationGrid>,
     mut visibility: ResMut<VisibilityGrid>,
     mut economy: ResMut<PlayerEconomy>,
-    units: Query<(&Unit, &Player, &Health, &WorldPosition)>,
+    units: Query<(
+        Entity,
+        &Unit,
+        &Player,
+        &Health,
+        &WorldPosition,
+        Option<&MovePath>,
+    )>,
     buildings: Query<(Entity, &Building, &WorldPosition, Option<&ConstructionSite>)>,
     resources: Query<(Entity, &ResourceNode, &WorldPosition)>,
     all_units: Query<Entity, With<Unit>>,
@@ -131,13 +145,17 @@ fn process_save_requests(
         match request {
             SaveRequest::Save => {
                 let mut entities = Vec::new();
-                for (unit, owner, health, position) in &units {
+                for (_, unit, owner, health, position, maybe_move_path) in &units {
+                    let move_path = maybe_move_path.map(|mp| SavedMovePath {
+                        path: mp.0.iter().map(|v| [v.x, v.y]).collect(),
+                    });
                     entities.push(SavedEntity::Unit {
                         kind: unit.kind.into(),
                         owner: owner.0,
                         position: [position.0.x, position.0.y],
                         hp: health.current,
                         max_hp: health.max,
+                        move_path,
                     });
                 }
                 for (_, building, position, site) in &buildings {
@@ -207,9 +225,10 @@ fn process_save_requests(
                             position,
                             hp,
                             max_hp,
+                            move_path,
                         } => {
                             let kind: UnitKind = kind.into();
-                            commands.spawn((
+                            let mut entity = commands.spawn((
                                 Unit { kind },
                                 Player(owner),
                                 Health {
@@ -218,6 +237,14 @@ fn process_save_requests(
                                 },
                                 WorldPosition(Vec2::new(position[0], position[1])),
                             ));
+                            if let Some(saved_path) = move_path {
+                                let path: VecDeque<IVec2> = saved_path
+                                    .path
+                                    .into_iter()
+                                    .map(|p| IVec2::new(p[0], p[1]))
+                                    .collect();
+                                entity.insert(MovePath(path));
+                            }
                         }
                         SavedEntity::Building {
                             owner,
@@ -295,11 +322,12 @@ fn validate_snapshot(
     for entity in &snapshot.entities {
         match entity {
             SavedEntity::Unit {
+                kind: _,
                 owner,
                 position,
                 hp,
                 max_hp,
-                ..
+                move_path,
             } => {
                 if *owner > 1
                     || !valid_position(*position, &restored_navigation)
@@ -311,6 +339,21 @@ fn validate_snapshot(
                     || *max_hp > 10_000.0
                 {
                     return Err("save contains an invalid unit".to_owned());
+                }
+                if let Some(ref path) = move_path {
+                    if path.path.len() > 100 {
+                        return Err(
+                            "save contains a unit with an excessively long move path".to_owned()
+                        );
+                    }
+                    for point in &path.path {
+                        let cell = IVec2::new(point[0], point[1]);
+                        if !restored_navigation.is_terrain_walkable(cell) {
+                            return Err(
+                                "save contains a move path through unwalkable terrain".to_owned()
+                            );
+                        }
+                    }
                 }
             }
             SavedEntity::Building {
@@ -407,6 +450,7 @@ mod tests {
                     ],
                     hp: 35.0,
                     max_hp: 60.0,
+                    move_path: None,
                 },
                 SavedEntity::Building {
                     owner: 0,
@@ -460,6 +504,7 @@ mod tests {
             position: [f32::NAN, 0.0],
             hp: 30.0,
             max_hp: 40.0,
+            move_path: None,
         };
         let navigation = NavigationGrid::open_field(8);
 
@@ -485,6 +530,7 @@ mod tests {
             position: [cell.x, cell.y],
             hp: 35.0,
             max_hp: 60.0,
+            move_path: None,
         };
 
         assert!(validate_snapshot(snapshot, "Test Map", &NavigationGrid::open_field(8)).is_err());

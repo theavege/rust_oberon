@@ -123,7 +123,7 @@ pub fn target_preference_key(distance: f32, target: Entity) -> (f32, u32, u32) {
 }
 
 /// Grid route generated for the unit's current movement order.
-#[derive(Component, Debug, Default)]
+#[derive(Component, Debug, Default, Clone)]
 pub struct MovePath(pub VecDeque<IVec2>);
 
 #[derive(Component, Debug)]
