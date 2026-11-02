@@ -59,9 +59,13 @@ Run `cargo run -- --validate-content` to validate every bundled `.map`, `.sch`, 
 
 `GameState::load` runs the same content validators before parsing and returning a map. Startup inserts the loaded state only after validation succeeds, so invalid content cannot partially replace the live world.
 
-### Next step: campaign load integration
+### Campaign load integration (implemented)
 
-When campaign transitions are added, route each map change through `GameState::load` and preserve the current game until the replacement map has passed validation and loaded successfully.
+Map change requests are routed through `GameState::load` which validates content before loading. The current game state is preserved until the replacement map has passed validation and loaded successfully, ensuring that failed transitions do not corrupt the game state.
+
+### Next step: persist unit orders in save/load
+
+Save/load currently does not persist movement and attack orders; units resume idle after loading. Extend the `Snapshot` format to include active `MovePath` and `AttackOrder` components, then restore them during load so units continue their previous actions. Ensure restored orders are validated against the loaded map bounds and entity existence before applying.
 
 ### Tooling: lint and format
 
