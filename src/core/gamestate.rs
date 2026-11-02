@@ -12,6 +12,7 @@ use bevy::log::{error, info};
 use bevy::prelude::*;
 
 use crate::core::datamanifest::Manifest;
+use crate::core::map::NavigationGrid;
 use crate::core::mapfile::MapFile;
 use crate::core::scheme::Scheme;
 
@@ -21,7 +22,7 @@ use crate::core::scheme::Scheme;
 pub const CELL_W: f32 = 32.0; // STRAIGHT
 pub const CELL_H: f32 = 16.0; // DIAGONAL (full rhombus height = 2*DIAGONAL? no: y step per cell is DIAGONAL/2)
 
-#[derive(Resource)]
+#[derive(Resource, Clone)]
 pub struct GameState {
     pub scheme: Scheme,
     pub manifest: Manifest,
@@ -140,6 +141,24 @@ mod tests {
     }
 }
 
+/// Event to request a map change (campaign transition).
+/// The current game state is preserved until the new map passes validation and loads successfully.
+#[derive(Event, Debug, Clone)]
+pub struct MapChangeRequest {
+    pub map_name: String,
+}
+
+/// Tracks an in-progress map change to preserve the current state until the new map loads.
+#[derive(Resource, Default)]
+pub struct MapChangeState {
+    /// The previous game state, preserved during map transition.
+    previous_game: Option<Box<GameState>>,
+    /// The previous navigation grid, preserved during map transition.
+    previous_navigation: Option<Box<NavigationGrid>>,
+    /// Whether a map change is currently in progress.
+    in_progress: bool,
+}
+
 pub fn init_game_state(
     mut commands: Commands,
     existing: Option<Res<GameState>>,
@@ -160,13 +179,74 @@ pub fn init_game_state(
                 gs.map.fragments.len(),
                 gs.scheme.name
             );
-            commands.insert_resource(crate::core::map::NavigationGrid::from_map(
-                &gs.map, &gs.scheme,
-            ));
+            commands.insert_resource(NavigationGrid::from_map(&gs.map, &gs.scheme));
             commands.insert_resource(gs);
         }
         Err(e) => {
             error!("Failed to load game state: {e}");
+        }
+    }
+}
+
+/// Handles map change requests for campaign transitions.
+/// Routes each map change through `GameState::load` and preserves the current
+/// game until the replacement map has passed validation and loaded successfully.
+pub fn handle_map_change_requests(
+    mut requests: EventReader<MapChangeRequest>,
+    mut commands: Commands,
+    current_game: Option<Res<GameState>>,
+    current_navigation: Option<Res<NavigationGrid>>,
+    mut change_state: ResMut<MapChangeState>,
+) {
+    // Only process the first request to avoid overlapping transitions
+    let Some(request) = requests.read().next() else {
+        return;
+    };
+
+    // Skip if already in progress or no current game
+    if change_state.in_progress || current_game.is_none() {
+        return;
+    }
+
+    change_state.in_progress = true;
+
+    // Preserve current state before attempting to load the new map
+    if let (Some(game), Some(navigation)) = (current_game.as_ref(), current_navigation.as_ref()) {
+        change_state.previous_game = Some(Box::new((*game).clone()));
+        change_state.previous_navigation = Some(Box::new((*navigation).clone()));
+    }
+
+    let do_root = find_assets_dir().unwrap_or_else(|| PathBuf::from("assets/do"));
+
+    // Attempt to load the new map through GameState::load (includes validation)
+    match GameState::load(&do_root, &request.map_name) {
+        Ok(new_game) => {
+            info!(
+                "Map change to '{}' successful ({}x{}, {} fragments, scheme '{}')",
+                new_game.map.name,
+                new_game.map.width,
+                new_game.map.height,
+                new_game.map.fragments.len(),
+                new_game.scheme.name
+            );
+
+            // New map loaded and validated successfully - replace the old state
+            let new_navigation = NavigationGrid::from_map(&new_game.map, &new_game.scheme);
+            commands.insert_resource(new_game);
+            commands.insert_resource(new_navigation);
+
+            // Clear preserved state
+            change_state.previous_game = None;
+            change_state.previous_navigation = None;
+            change_state.in_progress = false;
+        }
+        Err(e) => {
+            error!(
+                "Map change to '{}' failed: {}. Previous game state preserved.",
+                request.map_name, e
+            );
+            // On failure, keep the preserved state - the old resources are still in place
+            change_state.in_progress = false;
         }
     }
 }
@@ -176,6 +256,9 @@ pub struct DataPlugin;
 impl Plugin for DataPlugin {
     fn build(&self, app: &mut App) {
         // Runs before the render Startup systems (which read GameState).
-        app.add_systems(PreUpdate, init_game_state);
+        app.add_systems(PreUpdate, init_game_state)
+            .add_event::<MapChangeRequest>()
+            .init_resource::<MapChangeState>()
+            .add_systems(Update, handle_map_change_requests);
     }
 }
